@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScorpViewerView" customModule="GalleryExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8LT-4M-Uff">
+                    <rect key="frame" x="-5" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="SvJ-6d-ouX">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMs-Xo-kgu">
+                    <rect key="frame" x="305" y="40" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="HeW-yT-OJH"/>
+                        <constraint firstAttribute="height" constant="50" id="uBn-9z-D6q"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <action selector="didPressActionButtonWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="rTc-74-0pr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YMs-Xo-kgu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Hcx-DY-vGB"/>
+                <constraint firstItem="8LT-4M-Uff" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="UhN-OZ-O8W"/>
+                <constraint firstItem="8LT-4M-Uff" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hFO-MU-93u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YMs-Xo-kgu" secondAttribute="trailing" constant="20" id="sIb-lU-oJv"/>
+                <constraint firstItem="8LT-4M-Uff" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-5" id="t0X-sF-y2J"/>
+                <constraint firstItem="8LT-4M-Uff" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="-5" id="uFW-MF-H0p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="actionButton" destination="YMs-Xo-kgu" id="9RR-lJ-M5b"/>
+                <outlet property="collectionView" destination="8LT-4M-Uff" id="sV9-AX-wMe"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+</document>

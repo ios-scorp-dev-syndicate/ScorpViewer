@@ -10,6 +10,13 @@
 		6D2D911122CC67AF004EC1E8 /* ScorpViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2D910722CC67AF004EC1E8 /* ScorpViewer.framework */; };
 		6D2D911622CC67AF004EC1E8 /* ScorpViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2D911522CC67AF004EC1E8 /* ScorpViewerTests.swift */; };
 		6D2D911822CC67AF004EC1E8 /* ScorpViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2D910A22CC67AF004EC1E8 /* ScorpViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD063D122CD34DB0019BE67 /* ScorpViewerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD063CB22CD34DB0019BE67 /* ScorpViewerView.xib */; };
+		6DD063D222CD34DB0019BE67 /* ScorpViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD063CC22CD34DB0019BE67 /* ScorpViewerCell.swift */; };
+		6DD063D322CD34DB0019BE67 /* ScorpViewerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD063CD22CD34DB0019BE67 /* ScorpViewerCell.xib */; };
+		6DD063D422CD34DB0019BE67 /* ScorpViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD063CE22CD34DB0019BE67 /* ScorpViewerView.swift */; };
+		6DD063D522CD34DB0019BE67 /* ScorpViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD063CF22CD34DB0019BE67 /* ScorpViewerViewController.swift */; };
+		6DD063D622CD34DB0019BE67 /* ScorpViewerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD063D022CD34DB0019BE67 /* ScorpViewerViewController.storyboard */; };
+		6DD063D822CD34FB0019BE67 /* close-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD063D722CD34FB0019BE67 /* close-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		6D2D911022CC67AF004EC1E8 /* ScorpViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScorpViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2D911522CC67AF004EC1E8 /* ScorpViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorpViewerTests.swift; sourceTree = "<group>"; };
 		6D2D911722CC67AF004EC1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD063CB22CD34DB0019BE67 /* ScorpViewerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScorpViewerView.xib; sourceTree = "<group>"; };
+		6DD063CC22CD34DB0019BE67 /* ScorpViewerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScorpViewerCell.swift; sourceTree = "<group>"; };
+		6DD063CD22CD34DB0019BE67 /* ScorpViewerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScorpViewerCell.xib; sourceTree = "<group>"; };
+		6DD063CE22CD34DB0019BE67 /* ScorpViewerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScorpViewerView.swift; sourceTree = "<group>"; };
+		6DD063CF22CD34DB0019BE67 /* ScorpViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScorpViewerViewController.swift; sourceTree = "<group>"; };
+		6DD063D022CD34DB0019BE67 /* ScorpViewerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScorpViewerViewController.storyboard; sourceTree = "<group>"; };
+		6DD063D722CD34FB0019BE67 /* close-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,13 @@
 		6D2D910922CC67AF004EC1E8 /* ScorpViewer */ = {
 			isa = PBXGroup;
 			children = (
+				6DD063D722CD34FB0019BE67 /* close-icon.png */,
+				6DD063CC22CD34DB0019BE67 /* ScorpViewerCell.swift */,
+				6DD063CD22CD34DB0019BE67 /* ScorpViewerCell.xib */,
+				6DD063CE22CD34DB0019BE67 /* ScorpViewerView.swift */,
+				6DD063CB22CD34DB0019BE67 /* ScorpViewerView.xib */,
+				6DD063D022CD34DB0019BE67 /* ScorpViewerViewController.storyboard */,
+				6DD063CF22CD34DB0019BE67 /* ScorpViewerViewController.swift */,
 				6D2D910A22CC67AF004EC1E8 /* ScorpViewer.h */,
 				6D2D910B22CC67AF004EC1E8 /* Info.plist */,
 			);
@@ -148,6 +169,7 @@
 				TargetAttributes = {
 					6D2D910622CC67AF004EC1E8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					6D2D910F22CC67AF004EC1E8 = {
 						CreatedOnToolsVersion = 10.1;
@@ -177,6 +199,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD063D622CD34DB0019BE67 /* ScorpViewerViewController.storyboard in Resources */,
+				6DD063D822CD34FB0019BE67 /* close-icon.png in Resources */,
+				6DD063D122CD34DB0019BE67 /* ScorpViewerView.xib in Resources */,
+				6DD063D322CD34DB0019BE67 /* ScorpViewerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD063D422CD34DB0019BE67 /* ScorpViewerView.swift in Sources */,
+				6DD063D522CD34DB0019BE67 /* ScorpViewerViewController.swift in Sources */,
+				6DD063D222CD34DB0019BE67 /* ScorpViewerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +370,7 @@
 		6D2D911C22CC67AF004EC1E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.scorp.ScorpViewer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +397,7 @@
 		6D2D911D22CC67AF004EC1E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +423,7 @@
 		6D2D911F22CC67AF004EC1E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YFJ48SR2KW;
 				INFOPLIST_FILE = ScorpViewerTests/Info.plist;
@@ -409,6 +442,7 @@
 		6D2D912022CC67AF004EC1E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YFJ48SR2KW;
 				INFOPLIST_FILE = ScorpViewerTests/Info.plist;
