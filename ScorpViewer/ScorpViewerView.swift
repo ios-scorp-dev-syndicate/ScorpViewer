@@ -58,6 +58,10 @@ extension ScorpViewerView: UICollectionViewDelegate, UICollectionViewDataSource 
     let photo = handler.photos[indexPath.row]
     cell.set(withImage: photo)
     cell.set(backgroundColor: handler.backgroundColor)
+    if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+      layout.scrollDirection = .horizontal
+      let _ = self.collectionView(self.collectionView, layout: layout, sizeForItemAt: indexPath)
+    }
     return cell
   }
 }
@@ -71,22 +75,23 @@ public protocol ScorpViewerProtocol {
 
 
 extension ScorpViewerView: UICollectionViewDelegateFlowLayout {
-  func collectionView(_ collectionView: UICollectionView,
-                      layout collectionViewLayout: UICollectionViewLayout,
-                      sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return self.bounds.size
+  public func collectionView(_ collectionView: UICollectionView,
+                             layout collectionViewLayout: UICollectionViewLayout,
+                             sizeForItemAt indexPath: IndexPath) -> CGSize {
+    return CGSize(width: self.bounds.width + 5, height: self.bounds.height)
+
   }
 
-  func collectionView(_ collectionView: UICollectionView,
-                      layout collectionViewLayout: UICollectionViewLayout,
-                      minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-    return 10.0
+  public func collectionView(_ collectionView: UICollectionView,
+                             layout collectionViewLayout: UICollectionViewLayout,
+                             minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    return 5
   }
 
-  func collectionView(_ collectionView: UICollectionView, layout
+  public func collectionView(_ collectionView: UICollectionView, layout
     collectionViewLayout: UICollectionViewLayout,
-                      minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-    return 10.0
+                             minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    return 5
   }
 }
 
