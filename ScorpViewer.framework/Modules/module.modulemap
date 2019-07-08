@@ -1,0 +1,11 @@
+framework module ScorpViewer {
+  umbrella header "ScorpViewer.h"
+
+  export *
+  module * { export * }
+}
+
+module ScorpViewer.Swift {
+    header "ScorpViewer-Swift.h"
+    requires objc
+}

@@ -8,18 +8,18 @@
 
 import UIKit
 
-class ScorpViewerCell: UICollectionViewCell {
+public class ScorpViewerCell: UICollectionViewCell {
 
   static var reusableID = "scorpViewCellID"
   static var xibFileName = "ScorpViewerCell"
 
   @IBOutlet private weak var photoView: UIImageView!
 
-  func set(withImage image: UIImage){
+  public func set(withImage image: UIImage){
     self.photoView.image = image
   }
 
-  func set(backgroundColor color: UIColor){
+  public func set(backgroundColor color: UIColor){
     self.backgroundColor = color
   }
     

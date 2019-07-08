@@ -6,10 +6,34 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6D9E835F22D336FD00D9BC2A /* ScorpPhotoViewer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6D9E836022D336FD00D9BC2A /* Build configuration list for PBXAggregateTarget "ScorpPhotoViewer" */;
+			buildPhases = (
+				6D9E836322D3376D00D9BC2A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = ScorpPhotoViewer;
+			productName = ScorpPhotoViewer;
+		};
+		6D9E836822D33A7700D9BC2A /* ScorpViewerFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6D9E836922D33A7700D9BC2A /* Build configuration list for PBXAggregateTarget "ScorpViewerFramework" */;
+			buildPhases = (
+				6D9E836C22D33A9600D9BC2A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = ScorpViewerFramework;
+			productName = ScorpViewerFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		6D2D911122CC67AF004EC1E8 /* ScorpViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2D910722CC67AF004EC1E8 /* ScorpViewer.framework */; };
 		6D2D911622CC67AF004EC1E8 /* ScorpViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2D911522CC67AF004EC1E8 /* ScorpViewerTests.swift */; };
-		6D2D911822CC67AF004EC1E8 /* ScorpViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2D910A22CC67AF004EC1E8 /* ScorpViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DD063D122CD34DB0019BE67 /* ScorpViewerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD063CB22CD34DB0019BE67 /* ScorpViewerView.xib */; };
 		6DD063D222CD34DB0019BE67 /* ScorpViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD063CC22CD34DB0019BE67 /* ScorpViewerCell.swift */; };
 		6DD063D322CD34DB0019BE67 /* ScorpViewerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD063CD22CD34DB0019BE67 /* ScorpViewerCell.xib */; };
@@ -31,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		6D2D910722CC67AF004EC1E8 /* ScorpViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScorpViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D2D910A22CC67AF004EC1E8 /* ScorpViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScorpViewer.h; sourceTree = "<group>"; };
 		6D2D910B22CC67AF004EC1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2D911022CC67AF004EC1E8 /* ScorpViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScorpViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2D911522CC67AF004EC1E8 /* ScorpViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorpViewerTests.swift; sourceTree = "<group>"; };
@@ -92,7 +115,6 @@
 				6DD063CB22CD34DB0019BE67 /* ScorpViewerView.xib */,
 				6DD063D022CD34DB0019BE67 /* ScorpViewerViewController.storyboard */,
 				6DD063CF22CD34DB0019BE67 /* ScorpViewerViewController.swift */,
-				6D2D910A22CC67AF004EC1E8 /* ScorpViewer.h */,
 				6D2D910B22CC67AF004EC1E8 /* Info.plist */,
 			);
 			path = ScorpViewer;
@@ -114,7 +136,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D2D911822CC67AF004EC1E8 /* ScorpViewer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +195,12 @@
 					6D2D910F22CC67AF004EC1E8 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					6D9E835F22D336FD00D9BC2A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6D9E836822D33A7700D9BC2A = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = 6D2D910122CC67AF004EC1E8 /* Build configuration list for PBXProject "ScorpViewer" */;
@@ -190,6 +217,8 @@
 			targets = (
 				6D2D910622CC67AF004EC1E8 /* ScorpViewer */,
 				6D2D910F22CC67AF004EC1E8 /* ScorpViewerTests */,
+				6D9E835F22D336FD00D9BC2A /* ScorpPhotoViewer */,
+				6D9E836822D33A7700D9BC2A /* ScorpViewerFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +243,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D9E836322D3376D00D9BC2A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"ScorpViewer\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n";
+		};
+		6D9E836C22D33A9600D9BC2A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"ScorpViewer\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D2D910322CC67AF004EC1E8 /* Sources */ = {
@@ -385,12 +451,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.scorp.ScorpViewer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -412,11 +480,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.scorp.ScorpViewer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -458,6 +528,42 @@
 			};
 			name = Release;
 		};
+		6D9E836122D336FD00D9BC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFJ48SR2KW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D9E836222D336FD00D9BC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFJ48SR2KW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6D9E836A22D33A7700D9BC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFJ48SR2KW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D9E836B22D33A7700D9BC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFJ48SR2KW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -484,6 +590,24 @@
 			buildConfigurations = (
 				6D2D911F22CC67AF004EC1E8 /* Debug */,
 				6D2D912022CC67AF004EC1E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D9E836022D336FD00D9BC2A /* Build configuration list for PBXAggregateTarget "ScorpPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9E836122D336FD00D9BC2A /* Debug */,
+				6D9E836222D336FD00D9BC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D9E836922D33A7700D9BC2A /* Build configuration list for PBXAggregateTarget "ScorpViewerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9E836A22D33A7700D9BC2A /* Debug */,
+				6D9E836B22D33A7700D9BC2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
