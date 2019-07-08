@@ -1,9 +1,14 @@
-## Scorp Viewer | iOS Photo Viewer  V 1.0.1##
+![](scorpBanner.png)
+
+## Scorp Viewer | iOS Photo Viewer  V 1.0.1
  **It's finally here!** Scorp Viewer is the simplest photo viewer for iOS development
 Reale simple to use 
 Only do:
 `Import ScorpViewer` 
 **And you are ready to go!**
+
+![](demo.gif)
+
 
 On version **V 1.0.1**:
 
@@ -108,8 +113,6 @@ extension MyController: ScorpViewerProtocol {
 ```
 
 And You are done!
-
-[Demo Giphy](http://www.giphy.com/gifs/JORRiFX1P5fTGP2j1J)
 
 ### Publishing an App with this framework to the App Store ###
 
